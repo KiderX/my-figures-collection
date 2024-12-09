@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Pop Funko & Action Figure Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <!-- Add image blocks for each figure here -->
+        <div class="figure" onclick="openPopup('image1.jpg', 'Figure 1')">
+            <img src="image1_thumbnail.jpg" alt="Figure 1">
+            <p>Figure 1</p>
+        </div>
+        <div class="figure" onclick="openPopup('image2.jpg', 'Figure 2')">
+            <img src="image2_thumbnail.jpg" alt="Figure 2">
+            <p>Figure 2</p>
+        </div>
+        <!-- Add more figures as needed -->
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-image" src="" alt="Big Image">
+        <p id="popup-name"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
