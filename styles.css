@@ -55,17 +55,18 @@ body {
 /* 3D image container */
 .image-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);  /* Adjusted to 5 per row */
     gap: 20px;
-    perspective: 1500px;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px; /* You can adjust the maximum width */
+    justify-items: center;  /* Centers the images in the grid */
+    perspective: 1500px;
 }
 
 /* 3D effect on each image */
 .image {
-    width: 100%;
-    height: 300px;
+    width: 100%; /* Makes the images fit the container's width */
+    height: 300px; /* Fixed height for all images */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -78,7 +79,14 @@ body {
     transform: rotateY(15deg) rotateX(15deg);
 }
 
-/* Optional: Image size uniformity */
+/* Optional: Uniform image size */
 .image-container .image {
-    height: 300px; /* Adjust the size of the images */
+    height: 300px;  /* Ensures all images have the same height */
+    width: 100%;
+}
+
+.image-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
