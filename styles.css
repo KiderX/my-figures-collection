@@ -106,12 +106,12 @@ body {
 /* Media Queries for Responsive Layout */
 @media (max-width: 1200px) {
     .image-container {
-        grid-template-columns: repeat(10, 1fr); /* 5 images per row on medium screens */
+        grid-template-columns: repeat(7, 1fr); /* 5 images per row on medium screens */
     }
 }
 
 @media (max-width: 768px) {
     .image-container {
-        grid-template-columns: repeat(5, 1fr); /* 3 images per row on smaller screens */
+        grid-template-columns: repeat(4, 1fr); /* 3 images per row on smaller screens */
     }
 }
