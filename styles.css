@@ -88,13 +88,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
     transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    margin: 0 auto;  /* Center image in its grid cell */
 }
 
 .image:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker, larger shadow on hover */
 }
 
-/* Optional: Uniform image size */
+/* Uniform image size */
 .image-container .image {
     height: 300px;  /* Ensures all images have the same height */
     width: 300px;  /* Makes all images square */
@@ -104,6 +105,14 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Image captions */
+.image-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 10px; /* Space between image and caption */
 }
 
 /* Media Queries for Responsive Layout */
