@@ -83,7 +83,7 @@ body {
 .image {
     position: relative;
     width: 100%; /* Makes the images fit the container's width */
-    padding-top: 100%; /* This forces the image container to maintain a 1:1 ratio (square) */
+    aspect-ratio: 1; /* This forces the image to be square (width = height) */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
