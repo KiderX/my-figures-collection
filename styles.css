@@ -104,9 +104,9 @@ body {
     margin-top: 10px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: auto) {
     .image-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 images per row on small mobile devices */
+        grid-template-columns: repeat(auto, 1fr); /* 3 images per row on small mobile devices */
     }
 }
 }
