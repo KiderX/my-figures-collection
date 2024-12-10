@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Pop Funko & Action Figure Collection</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Funko and Action Figures</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="gallery">
-        <!-- Add image blocks for each figure here -->
-        <div class="figure" onclick="openPopup('images/download.jpg', 'Figure 1')">
-            <img src="images/download_thumbnail.jpg" alt="Figure 1">
-            <p>Figure 1</p>
-        </div>
-        <div class="figure" onclick="openPopup('images/download2.jpg', 'Figure 2')">
-            <img src="images/download2_thumbnail.jpg" alt="Figure 2">
-            <p>Figure 2</p>
-        </div>
-        <!-- Add more figures as needed -->
+  <div class="container">
+    <h1>My Collection</h1>
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="download.jpg" alt="Figure 1" class="clickable-image" />
+      </div>
+      <div class="image-item">
+        <img src="download2.jpg" alt="Figure 2" class="clickable-image" />
+      </div>
+      <!-- Add more items here -->
     </div>
+  </div>
 
-    <!-- Popup Modal -->
-    <div id="popup" class="popup">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <img id="popup-image" src="" alt="Big Image">
-        <p id="popup-name"></p>
-    </div>
+  <!-- Modal Window -->
+  <div id="modal" class="modal">
+    <span id="close-modal" class="close-btn">&times;</span>
+    <img id="modal-image" class="modal-content" />
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
