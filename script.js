@@ -1,17 +1,15 @@
-// Function to open the popup with the clicked figure
-function openPopup(imageSrc, name) {
-    var popup = document.getElementById('popup');
-    var popupImage = document.getElementById('popup-image');
-    var popupName = document.getElementById('popup-name');
-    
-    popupImage.src = imageSrc;
-    popupName.textContent = name;
+const images = document.querySelectorAll('.clickable-image');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modal-image');
+const closeModal = document.getElementById('close-modal');
 
-    popup.style.display = 'flex';
-}
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    modal.style.display = 'block';
+    modalImage.src = img.src;  // Display clicked image in modal
+  });
+});
 
-// Function to close the popup
-function closePopup() {
-    var popup = document.getElementById('popup');
-    popup.style.display = 'none';
-}
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
