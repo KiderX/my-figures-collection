@@ -81,8 +81,9 @@ body {
 
 /* Image styling with shadow effect */
 .image {
+    position: relative;
     width: 100%; /* Makes the images fit the container's width */
-    height: 300px; /* Fixed height for all images */
+    padding-top: 100%; /* This forces the image container to maintain a 1:1 ratio (square) */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -94,16 +95,10 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker, larger shadow on hover */
 }
 
-/* Uniform image size */
-.image-container .image {
-    height: 300px;  /* Ensures all images have the same height */
-    width: 100%;  /* Makes all images responsive */
-}
-
 /* Image captions below the images */
 .image-caption {
     text-align: center;
-    font-size: 1.2rem; /* Increase font size for the captions */
+    font-size: 1.5rem; /* Bigger font size for captions */
     color: #333;
     margin-top: 10px; /* Space between image and caption */
 }
