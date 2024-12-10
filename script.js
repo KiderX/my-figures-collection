@@ -10,6 +10,10 @@ const imagesData = [
     { src: 'images/download2.jpg', name: 'Image 8' },
     { src: 'images/download.jpg', name: 'Image 9' },
     { src: 'images/download2.jpg', name: 'Image 10' },
+    { src: 'images/download.jpg', name: 'Image 11' },  // New image
+    { src: 'images/download2.jpg', name: 'Image 12' }, // New image
+    { src: 'images/download.jpg', name: 'Image 13' },  // New image
+    { src: 'images/download2.jpg', name: 'Image 14' }  // New image
 ];
 
 // Get the image container element
@@ -17,6 +21,10 @@ const imageContainer = document.getElementById('image-container');
 
 // Generate and append image elements dynamically
 imagesData.forEach(image => {
+    // Create a wrapper for each image and its caption
+    const imageWrapper = document.createElement('div');
+    imageWrapper.classList.add('image-wrapper');
+
     // Create image div
     const imageDiv = document.createElement('div');
     imageDiv.classList.add('image');
@@ -27,9 +35,10 @@ imagesData.forEach(image => {
     captionDiv.classList.add('image-caption');
     captionDiv.innerText = image.name;
 
-    // Append caption to the image div
-    imageDiv.appendChild(captionDiv);
+    // Append image and caption to the wrapper
+    imageWrapper.appendChild(imageDiv);
+    imageWrapper.appendChild(captionDiv);
 
-    // Append the image div to the container
-    imageContainer.appendChild(imageDiv);
+    // Append the wrapper to the container
+    imageContainer.appendChild(imageWrapper);
 });
