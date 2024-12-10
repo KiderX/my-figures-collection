@@ -1,26 +1,35 @@
-// Select all the clickable images
-const images = document.querySelectorAll('.clickable-image');
-// Select the popup elements
-const popupModal = document.getElementById('popup-modal');
-const popupImage = document.getElementById('popup-image');
-const closePopup = document.getElementById('close-popup');
+// Array of images and their names
+const imagesData = [
+    { src: 'images/download.jpg', name: 'Image 1' },
+    { src: 'images/download2.jpg', name: 'Image 2' },
+    { src: 'images/download.jpg', name: 'Image 3' },
+    { src: 'images/download2.jpg', name: 'Image 4' },
+    { src: 'images/download.jpg', name: 'Image 5' },
+    { src: 'images/download2.jpg', name: 'Image 6' },
+    { src: 'images/download.jpg', name: 'Image 7' },
+    { src: 'images/download2.jpg', name: 'Image 8' },
+    { src: 'images/download.jpg', name: 'Image 9' },
+    { src: 'images/download2.jpg', name: 'Image 10' },
+];
 
-// When an image is clicked, show the popup with the large image
-images.forEach(img => {
-  img.addEventListener('click', () => {
-    popupModal.style.display = 'flex'; // Display the modal
-    popupImage.src = img.src;         // Set the modal image to the clicked image
-  });
-});
+// Get the image container element
+const imageContainer = document.getElementById('image-container');
 
-// Close the popup when the close button is clicked
-closePopup.addEventListener('click', () => {
-  popupModal.style.display = 'none'; // Hide the popup
-});
+// Generate and append image elements dynamically
+imagesData.forEach(image => {
+    // Create image div
+    const imageDiv = document.createElement('div');
+    imageDiv.classList.add('image');
+    imageDiv.style.backgroundImage = `url('${image.src}')`;
 
-// Close the popup if the user clicks anywhere outside the image
-popupModal.addEventListener('click', (e) => {
-  if (e.target === popupModal) {
-    popupModal.style.display = 'none'; // Close if outside the image
-  }
+    // Create caption div
+    const captionDiv = document.createElement('div');
+    captionDiv.classList.add('image-caption');
+    captionDiv.innerText = image.name;
+
+    // Append caption to the image div
+    imageDiv.appendChild(captionDiv);
+
+    // Append the image div to the container
+    imageContainer.appendChild(imageDiv);
 });
