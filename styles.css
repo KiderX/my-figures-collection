@@ -1,81 +1,68 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0e0e0e;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-    width: 90%;
-    max-width: 1200px;
+.container {
+  text-align: center;
 }
 
-.figure {
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+h1 {
+  font-size: 2.5em;
+  margin: 20px;
 }
 
-.figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
-.figure:hover {
-    transform: scale(1.1);
+.image-item img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-.figure p {
-    margin-top: 10px;
-    font-size: 1.2em;
+.image-item img:hover {
+  transform: scale(1.1);
 }
 
-/* Popup Modal */
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.popup img {
-    max-width: 90%;
-    max-height: 80vh;
-    margin-bottom: 20px;
+.modal-content {
+  margin: 100px auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
 }
 
-.popup p {
-    color: white;
-    font-size: 1.5em;
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
+.close-btn:hover {
+  color: #f44336;
 }
