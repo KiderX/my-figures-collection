@@ -71,26 +71,26 @@ body {
 /* Image container with responsive grid */
 .image-container {
     display: grid;
-    grid-template-columns: repeat(auto, 1fr); /* 7 images per row on PC */
-/*     gap: 10px; /* Gap between rows */
-/*     margin: 0 auto; */
-/*     width: 100%; */
-/*     max-width: 100%; /* Ensures the container stretches to fill the screen */ */
-/*     justify-items: center; */ */
+    grid-template-columns: repeat(auto, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%; /* Ensures the container stretches to fill the screen */
+    justify-items: center;
 }
 
 /* Image styling with shadow effect */
-.image {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 100%; /* Maintains aspect ratio of square */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-fill with a minimum column width of 200px */
+    gap: 10px; /* Gap between rows and columns */
+    margin: 0 auto;
+    width: 100%;  /* Ensure full width */
+    max-width: 100%; /* Make sure container stretches to available width */
+    justify-items: center;  /* Centers the images in their grid cells */
+    perspective: 1500px;  /* Optional: for 3D effects */
 }
+
 
 .image:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker, larger shadow on hover */
