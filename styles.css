@@ -71,12 +71,12 @@ body {
 /* Image container with responsive grid */
 .image-container {
     display: grid;
-    grid-template-columns: repeat(300px, 1fr); /* 7 images per row on PC */
-    gap: 10px; /* Gap between rows */
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%; /* Ensures the container stretches to fill the screen */
-    justify-items: center;
+    grid-template-columns: repeat(auto, 1fr); /* 7 images per row on PC */
+/*     gap: 10px; /* Gap between rows */
+/*     margin: 0 auto; */
+/*     width: 100%; */
+/*     max-width: 100%; /* Ensures the container stretches to fill the screen */ */
+/*     justify-items: center; */ */
 }
 
 /* Image styling with shadow effect */
