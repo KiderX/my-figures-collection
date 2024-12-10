@@ -77,7 +77,6 @@ body {
     width: 100%;
     max-width: 100%; /* Ensures the container stretches to fill the screen */
     justify-items: center;
-    perspective: 1500px;
 }
 
 /* Image styling with shadow effect */
