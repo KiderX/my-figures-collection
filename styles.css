@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body styling with shiny bright gray background */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #b0b0b0, #a0a0a0); /* Shiny gray background */
+    background: linear-gradient(135deg, #d1d1d1, #b5b5b5); /* Shiny bright gray background */
     background-size: 200% 200%;
     animation: gradientBackground 3s ease infinite; /* Smooth gradient animation */
 }
@@ -79,26 +79,25 @@ body {
     perspective: 1500px;
 }
 
-/* 3D effect on each image */
+/* 3D effect on each image (no movement, only shadow) */
 .image {
     width: 100%; /* Makes the images fit the container's width */
     height: 300px; /* Fixed height for all images */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    transition: transform 0.5s ease;
-    transform-style: preserve-3d;
-    will-change: transform;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
 }
 
 .image:hover {
-    transform: rotateY(15deg) rotateX(15deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker, larger shadow on hover */
 }
 
 /* Optional: Uniform image size */
 .image-container .image {
     height: 300px;  /* Ensures all images have the same height */
-    width: 100%;
+    width: 300px;  /* Makes all images square */
 }
 
 .image-container .image img {
