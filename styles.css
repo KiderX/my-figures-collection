@@ -71,7 +71,7 @@ body {
 /* Image container with responsive grid */
 .image-container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 images per row on PC */
+    grid-template-columns: repeat(auto, 10px); /* 7 images per row on PC */
     gap: 10px; /* Gap between rows */
     margin: 0 auto;
     width: 100%;
@@ -109,6 +109,7 @@ body {
 @media (max-width: 1024px) {
     .image-container {
         grid-template-columns: repeat(auto, 1fr); /* 7 images per row on smaller tablets */
+        gap: 15px
     }
 }
 }
