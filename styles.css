@@ -73,7 +73,8 @@ body {
     grid-template-columns: repeat(10, 1fr); /* 10 images per row by default */
     gap: 20px;
     margin: 0 auto;
-    max-width: 1000px; /* Can be adjusted */
+    max-width: 100%; /* Make sure container stretches to available width */
+    width: 100%;  /* Ensure full width */
     justify-items: center;  /* Centers the images */
     perspective: 1500px;
 }
