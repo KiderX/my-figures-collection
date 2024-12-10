@@ -8,26 +8,28 @@
 </head>
 <body>
   <div class="container">
-    <h1>My Collection</h1>
+    <h1>My Pop! Funko & Action Figures</h1>
     <div class="image-grid">
+      <!-- Example Images (Use your own) -->
       <div class="image-item">
         <img src="images/figure1.jpg" alt="Figure 1" class="clickable-image" />
       </div>
       <div class="image-item">
         <img src="images/figure2.jpg" alt="Figure 2" class="clickable-image" />
       </div>
-      <!-- More figures can be added here -->
+      <div class="image-item">
+        <img src="images/figure3.jpg" alt="Figure 3" class="clickable-image" />
+      </div>
+      <!-- More images can be added here -->
     </div>
   </div>
 
-  <!-- Modal Window -->
-  <div id="modal" class="modal">
-    <span id="close-modal" class="close-btn">&times;</span>
-    <img id="modal-image" class="modal-content" />
+  <!-- Popup Modal -->
+  <div id="popup-modal" class="popup-modal">
+    <span id="close-popup" class="close-btn">&times;</span>
+    <img id="popup-image" class="popup-image" />
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="background.js"></script> <!-- Link to your 3D background JS -->
-  <script src="script.js"></script> <!-- Link to the image modal JS -->
+  <script src="script.js"></script>
 </body>
 </html>
