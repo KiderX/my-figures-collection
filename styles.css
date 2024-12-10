@@ -108,18 +108,7 @@ body {
 /* Media Queries for Responsive Layout */
 @media (max-width: 1024px) {
     .image-container {
-        grid-template-columns: repeat(7, 1fr); /* 7 images per row on smaller tablets */
+        grid-template-columns: repeat(auto, 1fr); /* 7 images per row on smaller tablets */
     }
 }
-
-@media (max-width: 768px) {
-    .image-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 images per row on tablets and mobile */
-    }
-}
-
-@media (max-width: 480px) {
-    .image-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 images per row on small mobile devices */
-    }
 }
