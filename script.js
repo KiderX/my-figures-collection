@@ -10,10 +10,10 @@ const imagesData = [
     { src: 'images/download2.jpg', name: 'Image 8' },
     { src: 'images/download.jpg', name: 'Image 9' },
     { src: 'images/download2.jpg', name: 'Image 10' },
-    { src: 'images/download.jpg', name: 'Image 11' },  // New image
-    { src: 'images/download2.jpg', name: 'Image 12' }, // New image
-    { src: 'images/download.jpg', name: 'Image 13' },  // New image
-    { src: 'images/download2.jpg', name: 'Image 14' }  // New image
+    { src: 'images/download.jpg', name: 'Image 11' },
+    { src: 'images/download2.jpg', name: 'Image 12' },
+    { src: 'images/download.jpg', name: 'Image 13' },
+    { src: 'images/download2.jpg', name: 'Image 14' }
 ];
 
 // Get the image container element
