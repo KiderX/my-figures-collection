@@ -71,10 +71,10 @@ body {
 /* Image container with full screen size */
 .image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-fill with minimum width of 150px */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Increased minimum width of 250px */
     gap: 20px;
     margin: 0 auto;
-    max-width: 100%; /* Make sure container stretches to available width */
+    max-width: 100%; /* Ensure container stretches to available width */
     width: 100%;  /* Ensure full width */
     height: 100vh; /* Ensure container takes up 100% of the viewport height */
     justify-items: center;  /* Centers the images */
@@ -108,7 +108,7 @@ body {
 /* Media Queries for Responsive Layout */
 @media (max-width: 1200px) {
     .image-container {
-        grid-template-columns: repeat(5, 1fr); /* 5 images per row on medium screens */
+        grid-template-columns: repeat(4, 1fr); /* 4 images per row on medium screens */
     }
 }
 
