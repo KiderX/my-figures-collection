@@ -70,7 +70,7 @@ body {
 /* 3D image container */
 .image-container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); /* 10 images per row */
+    grid-template-columns: repeat(10, 1fr); /* 10 images per row by default */
     gap: 20px;
     margin: 0 auto;
     max-width: 1000px; /* Can be adjusted */
@@ -104,4 +104,23 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 1200px) {
+    .image-container {
+        grid-template-columns: repeat(5, 1fr); /* 5 images per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        grid-template-columns: 1fr; /* 1 image per row on extra small screens */
+    }
 }
