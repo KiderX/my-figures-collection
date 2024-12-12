@@ -95,20 +95,15 @@ body {
 /* Image Grid Styles */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto-fill with flexible sizes */
   gap: 20px;
   padding: 40px 20px;
 }
 
-@media (min-width: 768px) {
+/* For larger screens (e.g., laptop) */
+@media (min-width: 1024px) {
   .image-grid {
-    grid-template-columns: repeat(auto, 1fr));
-  }
-}
-
-@media (min-width: 300px) {
-  .image-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(10, 1fr); /* Max 10 images per row */
   }
 }
 
@@ -120,9 +115,10 @@ body {
 }
 
 .grid-item img {
-  width: 200px;
-  height: 200px; /* Set fixed height for uniformity */
-  object-fit: cover; /* Ensures the image covers the container without distorting */
+  width: 100%; /* Makes the image take full width of the container */
+  height: 100%; /* Makes the image take full height of the container */
+  object-fit: cover; /* Ensures the image fills the grid item without distorting */
+  border-radius: 12px; /* Same radius as the grid items for consistency */
   transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
 }
 
