@@ -15,17 +15,16 @@ body {
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: center; /* Center the items inside the navbar */
-  align-items: center; /* Vertically center the logo and nav items */
+  justify-content: center; /* Center the navbar content horizontally */
+  align-items: center; /* Center the navbar content vertically */
   background: linear-gradient(135deg, #050505, #41494d);
   padding: 15px 30px;
-  position: relative;
-  transition: background-color 0.3s ease;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
-/* Logo styles */
+/* Logo Styles */
 .navbar .logo a {
   color: #fff;
   text-decoration: none;
@@ -35,18 +34,16 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Adjust nav-links to align next to the logo if necessary */
+/* Navigation links */
 .nav-links {
   display: flex;
   gap: 25px;
   list-style: none;
-  position: absolute; /* This ensures that the nav-links will float over the logo */
-  left: 0;
-  right: 0;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center nav-links horizontally */
+  align-items: center; /* Center nav-links vertically */
 }
 
+/* Link Styles */
 .nav-links a {
   color: #fff;
   text-decoration: none;
