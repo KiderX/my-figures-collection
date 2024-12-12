@@ -4,6 +4,13 @@
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightbox-image');
 const closeBtn = document.getElementById('close');
+// Toggle the navigation menu on small screens (hamburger)
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
+});
 
 // Get all gallery images
 const galleryImages = document.querySelectorAll('.gallery-item img');
