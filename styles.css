@@ -110,7 +110,7 @@ body {
 /* For larger screens (e.g., laptop) */
 @media (max-width: 430px) {
   .image-grid {
-    grid-template-columns: repeat(auto, minmax(100px 1fr)); /* Max 10 images per row */
+    grid-template-columns: repeat(3 ,1fr); /* Max 10 images per row */
   }
 }
 
