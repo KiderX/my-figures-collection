@@ -15,8 +15,8 @@ body {
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Center the items inside the navbar */
+  align-items: center; /* Vertically center the logo and nav items */
   background: linear-gradient(135deg, #050505, #41494d);
   padding: 15px 30px;
   position: relative;
@@ -25,6 +25,7 @@ body {
   overflow: hidden;
 }
 
+/* Logo styles */
 .navbar .logo a {
   color: #fff;
   text-decoration: none;
@@ -34,10 +35,16 @@ body {
   transition: color 0.3s ease;
 }
 
+/* Adjust nav-links to align next to the logo if necessary */
 .nav-links {
   display: flex;
   gap: 25px;
   list-style: none;
+  position: absolute; /* This ensures that the nav-links will float over the logo */
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links a {
