@@ -129,7 +129,7 @@ body {
 
 @media (min-width: 768px) {
   .image-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ensures responsive columns */
+    grid-template-columns: repeat(10, 1fr)); /* Ensures responsive columns */
   }
 }
 
