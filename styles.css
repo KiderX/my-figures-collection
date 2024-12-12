@@ -145,6 +145,12 @@ main {
     object-fit: cover;
 }
 
+@media (min-width: 90px) {
+    .gallery-item {
+        grid-template-columns: repeat(3, 1fr); /* Forces at least 3 images per row on larger screens */
+    }
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
