@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Navbar with Image Grid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-    <!-- Navbar -->
+  <header>
     <nav class="navbar">
-        <div class="navbar-container">
-            <h1 class="logo">My Gallery</h1>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
+      <div class="logo">
+        <a href="#">MyLogo</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </nav>
+  </header>
 
-    <header>
-        <h1>Responsive Image Gallery</h1>
-        <p>Browse through our collection of beautiful images.</p>
-    </header>
+  <!-- Image Grid Section -->
+  <section class="image-grid">
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 1">
+    </div>
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 2">
+    </div>
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 3">
+    </div>
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 4">
+    </div>
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 5">
+    </div>
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/300x200" alt="Image 6">
+    </div>
+  </section>
 
-    <main>
-        <section class="gallery">
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/500x300?text=Image+1" alt="Image 1">
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/500x300?text=Image+2" alt="Image 2">
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/500x300?text=Image+3" alt="Image 3">
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/500x300?text=Image+4" alt="Image 4">
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/500x300?text=Image+5" alt="Image 5">
-            </div>
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/500x300?text=Image+6" alt="Image 6">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Image Gallery. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
