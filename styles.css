@@ -1,112 +1,70 @@
-/* Reset default margins and padding */
+/* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body styling */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #d1d1d1, #b5b5b5); /* Shiny bright gray background */
-    background-size: 200% 200%;
-    animation: gradientBackground 3s ease infinite; /* Smooth gradient animation */
-    height: 100%; /* Ensure body takes up full height */
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Smooth gradient animation for the background */
-@keyframes gradientBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
-/* Header styles */
-.header {
-    background-color: black;
-    color: white;
-    padding: 50px 0;
-    position: relative;
-    overflow: hidden;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
+header p {
+  font-size: 1rem;
 }
 
-.header-content {
-    text-align: center;
-    z-index: 1;
-    position: relative;
+main {
+  padding: 2rem;
 }
 
-.header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+/* Gallery Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Adjust the min-width for images */
+  gap: 0.8rem;
+  /* Reduced gap for closer images */
+  margin-top: 1rem;
 }
 
-.header p {
-    font-size: 1.5rem;
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Main content styles */
-.main-content {
-    padding: 50px;
-    text-align: center;
+/* Hover effect for images */
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Image container with responsive grid */
-.image-container {
-    display: grid;
-    grid-template-columns: repeat(auto, 1fr);
-    gap: 10px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%; /* Ensures the container stretches to fill the screen */
-    justify-items: center;
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
-/* Image styling with shadow effect */
-.image-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-fill with a minimum column width of 200px */
-    gap: 10px; /* Gap between rows and columns */
-    margin: 0 auto;
-    width: 100%;  /* Ensure full width */
-    max-width: 100%; /* Make sure container stretches to available width */
-    justify-items: center;  /* Centers the images in their grid cells */
-    perspective: 1500px;  /* Optional: for 3D effects */
-}
-
-
-.image:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker, larger shadow on hover */
-}
-
-/* Image captions below the images */
-.image-caption {
-    text-align: center;
-    font-size: 1.2rem; /* Bigger font size for captions */
-    color: #333;
-    margin-top: 10px;
-}
-
-@media (max-width: auto) {
-    .image-container {
-        grid-template-columns: repeat(auto, 1fr); /* 3 images per row on small mobile devices */
-    }
-}
+footer p {
+  font-size: 1rem;
 }
