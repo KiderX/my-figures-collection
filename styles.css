@@ -25,6 +25,11 @@ body {
 }
 
 /* Logo Styles */
+.navbar .logo {
+  text-align: center; /* Center the logo text */
+}
+
+/* Logo Styles */
 .navbar .logo a {
   color: #fff;
   text-decoration: none;
