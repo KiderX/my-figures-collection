@@ -127,6 +127,12 @@ body {
   padding: 40px 20px;
 }
 
+@media (min-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ensures responsive columns */
+  }
+}
+
 @media (min-width: 300px) {
   .image-grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
