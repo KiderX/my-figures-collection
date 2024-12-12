@@ -107,6 +107,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {  /* Target iPhone and other smaller devices */
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);  /* Ensure three images per row */
+  }
+}
+
 /* For larger screens (e.g., laptop) */
 @media (max-width: 430px) {
   .image-grid {
